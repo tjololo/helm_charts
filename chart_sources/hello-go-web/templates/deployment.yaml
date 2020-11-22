@@ -19,7 +19,7 @@ spec:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         name: hello-go-web
         env:
-          name: APP_INFO
+        - name: APP_INFO
           value: "Deploy with helm-chart: {{ include "hello-go-web.chart" . }}"
         readinessProbe:
           failureThreshold: 3
