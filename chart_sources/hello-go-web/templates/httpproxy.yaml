@@ -1,0 +1,16 @@
+# httpproxy.yaml
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: {{ include "hello-go-web.fullname" . }}
+spec:
+  virtualhost:
+    fqdn: {{ .Values.url }}
+    tls:
+      secretName: {{ include "hello-go-web.fullname" . }}
+  routes:
+    - conditions:
+      - prefix: /hello
+      services:
+        - name: {{ include "hello-go-web.fullname" . }}-http
+          port: 8080
