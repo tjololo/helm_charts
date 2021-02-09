@@ -3,7 +3,17 @@ entries:
   hello-dotnet:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-02-09T13:42:57.431701+01:00"
+    created: "2021-02-09T13:52:07.533677+01:00"
+    description: A Helm chart for Kubernetes
+    digest: e041376c736b0d2d3d098f4d7a3347250cda97cc21e9733386c4d8ce8db7e17e
+    name: hello-dotnet
+    type: application
+    urls:
+    - https://tjololo.github.io/helm_charts/hello-dotnet-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-02-09T13:52:07.532805+01:00"
     description: A Helm chart for Kubernetes
     digest: b1218f36a4a2cb9402eee1a6c683133f48e5c6e10b469a6054aa401c6ea061d7
     name: hello-dotnet
@@ -14,9 +24,9 @@ entries:
   hello-go-web:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-02-09T13:42:57.441713+01:00"
+    created: "2021-02-09T13:52:07.539289+01:00"
     description: A Helm chart for Kubernetes
-    digest: f18a6a0e15398bdb91ec33a2d3e83457bc4094ff7f80f4c54792cc71fe15bbb4
+    digest: 9b1bf3509fa16f3df53df32b915d45aa1dd2b872637fd8c890e7ef98bcfb5958
     name: hello-go-web
     type: application
     urls:
@@ -24,7 +34,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-02-09T13:42:57.441038+01:00"
+    created: "2021-02-09T13:52:07.538626+01:00"
     description: A Helm chart for Kubernetes
     digest: 8b1ace4ef088418cb17adf5d84766fff8e0f8b761a7dbfd80b2c0ae63172b672
     name: hello-go-web
@@ -34,7 +44,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-02-09T13:42:57.438056+01:00"
+    created: "2021-02-09T13:52:07.536509+01:00"
     description: A Helm chart for Kubernetes
     digest: 5fd4303ca85a6cda96f75b3b1a4a65cd93d281732a097b860187832b0ae66eeb
     name: hello-go-web
@@ -44,7 +54,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-02-09T13:42:57.435011+01:00"
+    created: "2021-02-09T13:52:07.534771+01:00"
     description: A Helm chart for Kubernetes
     digest: 88a23952f5de82f076e4eb71e0cd9b37d6770242221c7a71faebaa643aa89761
     name: hello-go-web
@@ -52,4 +62,4 @@ entries:
     urls:
     - https://tjololo.github.io/helm_charts/hello-go-web-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-09T13:42:57.43057+01:00"
+generated: "2021-02-09T13:52:07.530468+01:00"
