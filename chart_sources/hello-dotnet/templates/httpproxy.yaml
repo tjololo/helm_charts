@@ -1,0 +1,22 @@
+# httpproxy.yaml
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: {{ include "hello-dotnet.fullname" . }}
+spec:
+  virtualhost:
+    fqdn: {{ .Values.url }}
+    tls:
+      secretName: {{ include "hello-dotnet.fullname" . }}
+  routes:
+    - conditions:
+      - prefix: /dotnet
+      services:
+        - name: {{ include "hello-dotnet.fullname" . }}-http
+          port: 8080
+      pathRewritePolicy:
+        replacePrefix:
+        - prefix: /dotnet/hello
+          replacement: /hello
+        - prefix: /dotnet/calldown
+          replacement: /calldown

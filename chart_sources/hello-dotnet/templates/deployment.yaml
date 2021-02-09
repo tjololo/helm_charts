@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: {{ include "hello-dotnet.fullname" . }}
+  name: {{ include "hello-dotnet.fullname" . }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ include "hello-dotnet.fullname" . }}
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: {{ include "hello-dotnet.fullname" . }}
+    spec:
+      containers:
+      - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        name: hello-dotnet
+        env:
+        - name: APP_INFO
+          value: "Deploy with helm-chart: {{ include "hello-dotnet.chart" . }}"
+        readinessProbe:
+          failureThreshold: 3
+          successThreshold: 1
+          initialDelaySeconds: 1
+          timeoutSeconds: 1
+          periodSeconds: 5
+          httpGet:
+            path: /hello
+            port: 5000
+        livenessProbe:
+          failureThreshold: 3
+          successThreshold: 1
+          initialDelaySeconds: 1
+          timeoutSeconds: 1
+          periodSeconds: 5
+          httpGet:
+            path: /hello
+            port: 5000
+        resources:
+          requests:
+            cpu: 50m
+            memory: 64Mi
+          limits:
+            cpu: 100m
+            memory: 128Mi
+        ports:
+        - containerPort: 5000
+          name: http
+          protocol: TCP
