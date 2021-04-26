@@ -17,3 +17,7 @@ linkerd:
 
 keda:
   scale: true
+  threshold: 10
+  min: 0
+  max: 10
+  cooldown: 300

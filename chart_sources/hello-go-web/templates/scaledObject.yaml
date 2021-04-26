@@ -2,16 +2,18 @@
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:
-  name: prometheus-scaledobject
-  namespace: default
+  name: {{ include "hello-go-web.fullname" . }}
 spec:
   scaleTargetRef:
     name: {{ include "hello-go-web.fullname" . }}
+  minReplicaCount: {{ .Values.keda.min }}
+  maxReplicaCount: {{ .Values.keda.max }}
+  cooldownPeriod: {{ .Values.keda.cooldown }}
   triggers:
   - type: prometheus
     metadata:
       serverAddress: http://prometheus.linkerd-viz.svc.cluster.local:9090
       metricName: request_total
-      threshold: '10'
+      threshold: {{ .Values.keda.threshold | quote }}
       query: {{ include "hello-go-web.query" . }}
 {{- end }}
