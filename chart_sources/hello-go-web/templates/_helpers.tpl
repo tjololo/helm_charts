@@ -30,7 +30,7 @@ If release name contains chart name it will be used as a full name.
 */}}
 {{- define "hello-go-web.query" -}}
 {{- $name := include "hello-go-web.fullname" .}}
-{{- printf "sum(irate(request_total{deployment='%s', direction='inbound'}[30s]))" $name }}
+{{- printf "sum(irate(request_total{deployment='%s', direction='inbound',client_id='envoy.projectcontour.serviceaccount.identity.linkerd.cluster.local'}[30s]))" $name }}
 {{- end }}
 
 {{/*
