@@ -14,6 +14,10 @@ spec:
     metadata:
       labels:
         app: {{ include "hello-go-web.fullname" . }}
+      {{- if .Values.linkerd.inject }}
+      annotations:
+        linkerd.io/inject: enabled
+      {{- end }}
     spec:
       containers:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}

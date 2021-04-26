@@ -1,0 +1,18 @@
+{{- if .Values.keda.scale }}
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: prometheus-scaledobject
+  namespace: default
+spec:
+  scaleTargetRef:
+    name: {{ include "hello-go-web.fullname" . }}
+spec:
+  triggers:
+  - type: prometheus
+    metadata:
+      serverAddress: http://prometheus.linkerd-viz.svc.cluster.local:9090
+      metricName: request_total
+      threshold: '10'
+      query: {{ include "hello-go-web.query" . }}
+{{- end }}

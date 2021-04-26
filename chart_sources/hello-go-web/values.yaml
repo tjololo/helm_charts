@@ -11,3 +11,9 @@ image:
   tag: "1.0.0"
 
 url: dev.418.cloud
+
+linkerd:
+  inject: true
+
+keda:
+  scale: true
