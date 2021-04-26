@@ -7,7 +7,6 @@ metadata:
 spec:
   scaleTargetRef:
     name: {{ include "hello-go-web.fullname" . }}
-spec:
   triggers:
   - type: prometheus
     metadata:
