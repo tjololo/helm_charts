@@ -16,7 +16,5 @@ spec:
           port: 8080
       pathRewritePolicy:
         replacePrefix:
-        - prefix: /dotnet/hello
-          replacement: /hello
-        - prefix: /dotnet/calldown
-          replacement: /calldown
+        - prefix: /dotnet
+          replacement: /
