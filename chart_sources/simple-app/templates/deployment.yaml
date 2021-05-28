@@ -5,7 +5,7 @@ metadata:
     app: {{ include "hello-go-web.fullname" . }}
   name: {{ include "hello-go-web.fullname" . }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: {{ include "hello-go-web.fullname" . }}
