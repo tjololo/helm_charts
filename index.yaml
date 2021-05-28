@@ -3,9 +3,9 @@ entries:
   hello-dotnet:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-04-26T14:34:55.843685+02:00"
+    created: "2021-05-28T15:06:30.767514+02:00"
     description: A Helm chart for Kubernetes
-    digest: 5502481a6d361f6377dec1d1ea406e14bb9322adaafa690bc7257b7418926037
+    digest: 7f1cfd6f73abe2108615c2e78b28066a1d07630e11f99fe5e3284e39afecfb0d
     name: hello-dotnet
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-04-26T14:34:55.842771+02:00"
+    created: "2021-05-28T15:06:30.767022+02:00"
     description: A Helm chart for Kubernetes
     digest: e041376c736b0d2d3d098f4d7a3347250cda97cc21e9733386c4d8ce8db7e17e
     name: hello-dotnet
@@ -23,7 +23,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-04-26T14:34:55.841384+02:00"
+    created: "2021-05-28T15:06:30.764698+02:00"
     description: A Helm chart for Kubernetes
     digest: b1218f36a4a2cb9402eee1a6c683133f48e5c6e10b469a6054aa401c6ea061d7
     name: hello-dotnet
@@ -34,9 +34,9 @@ entries:
   hello-go-web:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-04-26T14:34:55.852287+02:00"
+    created: "2021-05-28T15:06:30.786314+02:00"
     description: A Helm chart for Kubernetes
-    digest: 1bb12215bfbfcceefa04bd11252b0e0d54cf8fef96d0fd1b96519bb8ba91eb8b
+    digest: 59008c7d5c602fdaff5acff6a761bde8d50b27e2880ebb2e3e0f8dbd9d707e12
     name: hello-go-web
     type: application
     urls:
@@ -44,7 +44,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-04-26T14:34:55.851314+02:00"
+    created: "2021-05-28T15:06:30.785554+02:00"
     description: A Helm chart for Kubernetes
     digest: bda0cf954b08191cd2daccdf8d1016c69c4d9102ab0889d84c60e9806925dc0c
     name: hello-go-web
@@ -54,7 +54,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-04-26T14:34:55.84981+02:00"
+    created: "2021-05-28T15:06:30.779237+02:00"
     description: A Helm chart for Kubernetes
     digest: 4eaa2e31af61b7202c6cbfdf312490b0a7393f499836d97f75c05cd61bef4031
     name: hello-go-web
@@ -64,7 +64,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-04-26T14:34:55.848277+02:00"
+    created: "2021-05-28T15:06:30.77633+02:00"
     description: A Helm chart for Kubernetes
     digest: dc4d1cab80ddb88b52909bc8adcf6afeebbaae10ae5606636b49274bae9f6917
     name: hello-go-web
@@ -74,7 +74,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-04-26T14:34:55.847143+02:00"
+    created: "2021-05-28T15:06:30.77411+02:00"
     description: A Helm chart for Kubernetes
     digest: 8b1ace4ef088418cb17adf5d84766fff8e0f8b761a7dbfd80b2c0ae63172b672
     name: hello-go-web
@@ -84,7 +84,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-04-26T14:34:55.84606+02:00"
+    created: "2021-05-28T15:06:30.77189+02:00"
     description: A Helm chart for Kubernetes
     digest: 5fd4303ca85a6cda96f75b3b1a4a65cd93d281732a097b860187832b0ae66eeb
     name: hello-go-web
@@ -94,7 +94,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-04-26T14:34:55.844994+02:00"
+    created: "2021-05-28T15:06:30.769652+02:00"
     description: A Helm chart for Kubernetes
     digest: 88a23952f5de82f076e4eb71e0cd9b37d6770242221c7a71faebaa643aa89761
     name: hello-go-web
@@ -102,4 +102,15 @@ entries:
     urls:
     - https://tjololo.github.io/helm_charts/hello-go-web-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-26T14:34:55.839375+02:00"
+  simple-app:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-05-28T15:06:30.787963+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 803d463d75dbcad6f0e13b929bbd8964a4ae7a03f579613222167edd01987819
+    name: simple-app
+    type: application
+    urls:
+    - https://tjololo.github.io/helm_charts/simple-app-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-05-28T15:06:30.761668+02:00"
